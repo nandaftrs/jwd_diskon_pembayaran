@@ -1,0 +1,177 @@
+:root {
+    --primary: #b6895b;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #e0c3fc, #8ec5fc);
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5%;
+    background: linear-gradient(to bottom, #b881ec, #63a9f0);
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    background: none;
+}
+
+.navbar .navbar-logo span {
+    color: #0000CD;
+}
+
+.navbar .navbar-nav a {
+    color: rgb(29, 28, 28);
+    background: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: rgb(21, 0, 212);
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid black;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+/* main container */
+.main-container {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 500px;
+}
+
+.panel-form {
+    color: rgb(0, 0, 0);
+    width: 320px;
+    background: linear-gradient(to left, #947de7, #92b6df);
+    box-shadow: 2 2 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.panel-form h1 {
+    border-bottom: 2px #381c00 solid;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+input[type='text'],
+input[type='password'] {
+    padding: 3px;
+    width: 200px;
+}
+
+input[type='submit'] {
+    padding: 5px 8px;
+    background-color: #0071db;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input[type='submit']:hover {
+    background-color: #a94bf7;
+    color: black;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.panel-info {
+    width: 320px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px rgb(46, 44, 44) solid;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.info-belanja,
+.info-discount,
+.info-bayar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 2px dashed rgb(46, 44, 44);
+    padding-bottom: 5px;
+}
+
+/* logout button */
+a {
+    padding: 6px 9px;
+    background-color: #62a0da;
+    text-decoration: none;
+    border-radius: 8px;
+    color: black;
+}
+
+a:hover {
+    background-color: #a94bf7;
+    color: white;
+}
+
+/* footer */
+footer {
+    background: linear-gradient(to top, #b881ec, #63a9f0);
+}
+
+footer .line1 {
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    display: flex;
+    text-align: center;
+    padding: 0.5rem 5%;
+}
+
+footer p {
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    padding: 0.5rem 5%;
+}
